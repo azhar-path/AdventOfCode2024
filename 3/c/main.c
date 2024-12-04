@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
 
 #define DBG 0
 #define DEBUG(...) do { if(DBG) printf(__VA_ARGS__); } while(0)
@@ -19,7 +18,7 @@ int main(void)
 
     int c;
     int enable = 1;
-    //below is basically a state machine implemented in if/else
+    //below is basically a state machine implemented in if/else/goto
     //great example for goto use I think
     while((c = fgetc(infile)) != EOF)
     {

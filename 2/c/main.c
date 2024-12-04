@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-#if 0 //kind of a bad implementation, for part 1
+#if 0 //works but kind of a bad implementation, for part 1
 typedef enum
 {
     INCREASING,
@@ -213,7 +213,7 @@ int main(void)
 
     rewind(infile);
     int result2 = 0;
-    #if 0 //what the hell
+    #if 0 //what the hell, I give up
     int nums[32]; //same approach won't work for problem 2, so array
     while(fgets(line, sizeof(line), infile) != NULL)
     {
@@ -333,9 +333,8 @@ int main(void)
             }
         }
     }
-    #elif 0
-    //brute force
-    int nums[32]; //same approach won't work for problem 2, so array
+    #elif 0 //brute force
+    int nums[32];
     while(fgets(line, sizeof(line), infile) != NULL)
     {
         int nums_n = 0;
@@ -371,7 +370,7 @@ int main(void)
         continue_outer:
     }
     #else //thanks reddit for non-brute-force tips
-    int nums[32]; //same approach won't work for problem 2, so array
+    int nums[32];
     while(fgets(line, sizeof(line), infile) != NULL)
     {
         int nums_n = 0;

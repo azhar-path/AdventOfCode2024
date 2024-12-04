@@ -66,7 +66,6 @@ int main(void)
     /*other approach would be a char*[] , each element containing the pointer &input_buf[row_start]
       This would require us to find out the number of rows first to allocate memory (efficiently)
       But this approach doesn't require packing the alphabet values continuously*/
-    /* It's possible the problem maybe agnostic to row/column distinction and I don't need to worry about it */
 
     for(int i = 0; i < rows; i++)
     {
